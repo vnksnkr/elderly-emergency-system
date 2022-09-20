@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Critical HeartRate History</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Link CSS -->
+        <link rel="stylesheet" href="static/style.css">
+    </head>
+    <body>
+
+        <!-- Main Data Table -->
+        <div class="mainTable">
+            <h1>Critical HeartRate History</h1>
+            <table id="table" border="1">
+                
+                <tr>
+                    <th>Sno</th>
+                    <th>HeartRate</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                </tr>
+
+                {% for item in data %}
+                <tr>
+                    <td>{{item[0]}}</td>
+                    <td>{{item[2]}}</td>
+                    <td>{{item[1].split(' ')[0]}}</td>
+                    <td>{{item[1].split(' ')[1]}}</td>
+                </tr>
+                {% endfor %}
+                
+                                
+            </table>
+        </div>
+
+
+        <!-- Update Button -->
+       
+
+        <!-- Edit table -->
+
+        <!-- link JavaScript -->
+        <script src="script.js"></script>
+    </body>
+</html>

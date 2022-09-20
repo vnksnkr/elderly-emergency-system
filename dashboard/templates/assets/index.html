@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Medical History</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Link CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <!-- Main Data Table -->
+        <div class="mainTable">
+            <h1>Medical History</h1>
+            <table id="table" border="1">
+                
+                <tr>
+                    <th>Sno</th>
+                    <th>Diagnosis</th>
+                    <th>Medication</th>
+                    <th>Dosage(per day)</th>
+                    <th>Duration</th>
+                </tr>
+                
+                <tr>
+                    <td>01</td>
+                    <td>Parkinsons </td>
+                    <td>Dopamine agonists</td>
+                    <td>twice</td>
+                    <td>life long</td>
+                </tr>
+                
+                <tr>
+                    <td>02</td>
+                    <td>Diabetes </td>
+                    <td>Insulin shots</td>
+                    <td>One</td>
+                    <td>3 months</td>
+                </tr>
+                
+                <tr>
+                    <td>03</td>
+                    <td>BP </td>
+                    <td>ACE Inhibitor</td>
+                    <td>twice</td>
+                    <td>5 weeks</td>
+                </tr>
+                
+                <tr>
+                    <td>04</td>
+                    <td>TB </td>
+                    <td>isoniazid</td>
+                    <td>one</td>
+                    <td>2 weeks</td>
+                </tr>
+                
+            </table>
+        </div>
+
+
+        <!-- Update Button -->
+       
+
+        <!-- Edit table -->
+        <div class="editTable" >
+            <div class="left">Sno: </div><div class="right"><input type="number" name="sno" id="sno"></div><br><br>
+            <div class="left">Diagnosis: </div><div class="right"><input type="text" name="diagnosis" id="diagnosis"></div><br><br>
+            <div class="left">Medication: </div><div class="right"><input type="text" name="medication" id="medication"></div><br><br>
+            <div class="left">Dosage: </div><div class="right"><input type="text" name="dosage" id="dosage"></div><br><br>
+            <div class="left">Duration: </div><div class="right"><input type="text" name="duration" id="duration"></div><br><br>
+            <div class="updateBtn">
+            <button onclick="addHtmlTableRow();">Add</button>
+            <button onclick="editHtmlTbleSelectedRow();">Edit</button>
+            <button onclick="removeSelectedRow();">Remove</button
+            </div>
+        </div>        
+
+        <!-- link JavaScript -->
+        <script src="script.js"></script>
+    </body>
+</html>
