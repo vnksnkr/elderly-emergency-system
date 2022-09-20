@@ -8,6 +8,11 @@ Wearable Sensor System to Monitor Body Vitals, Falls, and Resting Hand Tremors
 - Companion website to monitor  patient’s hand tremors and vital body information, making it easy for diagnosis and treatment.
 - Telegram API integration to notify critical falls and heart rate
 
+### Website
+<img src = "Assets/dashboard.png">
+
+<img src = "Assets/tremors.png">
+
 ## Hardware Used:
 - ESP32
 - MAX30101 for heart rate measurement
